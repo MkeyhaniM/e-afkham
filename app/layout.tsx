@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Exo_2, Lexend_Exa } from "next/font/google";
 import "./globals.css";
-import { Account, Navigation } from "@component/src/components/navbar";
+import { Navigation } from "@component/src/components/navbar";
 
 const Exo2 = Exo_2({
   variable: "--font-geist-sans",
