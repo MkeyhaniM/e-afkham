@@ -1,9 +1,9 @@
 import { usePathname } from "next/navigation";
 
 const useCheckUrls = (segment: string) => {
-  const params = usePathname();
+  const pathname = usePathname();
 
-  if (params === "/" + segment || params === "/") {
+  if (pathname === segment) {
     return true;
   }
 
