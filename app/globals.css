@@ -14,3 +14,9 @@
 .font-lexend-exa {
   font-family: var(--font-lexend-exa);
 }
+
+@layer {
+  .ttt:hover path {
+    stroke: #dc2626;
+  }
+}
