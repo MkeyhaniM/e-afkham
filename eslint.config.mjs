@@ -13,4 +13,8 @@ const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
 
+eslintConfig.push({
+  "no-require-imports": "off",
+});
+
 export default eslintConfig;
