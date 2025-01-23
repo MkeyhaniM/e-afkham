@@ -8,6 +8,13 @@ import Computer from "./Computer";
 import Gaming from "./Gaming";
 import Headphone from "./Headphone";
 import Phone from "./Phone";
+import HeadPhoneDark from "./HeadPhoneDark";
+import IphoneDark from "./IphoneDark";
+import ComputerDark from "./ComputerDark";
+import CamerasDark from "./CamerasDark";
+import GamingDark from "./GamingDark";
+import SmartWatchDark from "./SmartWatchDark";
+import FavoriteList from "./FavoriteList";
 
 export {
   Search,
@@ -20,4 +27,11 @@ export {
   Computer,
   Cameras,
   SmartWatch,
+  SmartWatchDark,
+  ComputerDark,
+  GamingDark,
+  IphoneDark,
+  HeadPhoneDark,
+  CamerasDark,
+  FavoriteList,
 };
