@@ -1,7 +1,7 @@
 "use client";
 import useStore from "@component/src/store/useStore";
 import Button from "../Button";
-import { Shopping, UserAccount } from "@component/src/icons";
+import { FavoriteList, Shopping, UserAccount } from "@component/src/icons";
 import Link from "next/link";
 
 const Account = () => {
@@ -17,7 +17,10 @@ const Account = () => {
           />
         </>
       ) : (
-        <div className="flex gap-5 items-center">
+        <div className="flex gap-5">
+          <Link href={"/test"}>
+            <FavoriteList />
+          </Link>
           <Link href={"/test"}>
             <Button name={Shopping} style="" />
           </Link>

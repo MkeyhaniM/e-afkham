@@ -1,9 +1,13 @@
-import React from "react";
+import { NavbarProduct } from "@component/src/types";
 
-const ItemsProducts = ({ item }) => {
+interface Props {
+  item: NavbarProduct;
+}
+
+const ItemsProducts = ({ item }: Props) => {
   return (
     <div className="cursor-pointer flex gap-4 items-center hover:text-red-600 text-white text-base ttt">
-      {item.icon}
+      <div className="w-6 h-6">{item.icon}</div>
       {item.name}
     </div>
   );
