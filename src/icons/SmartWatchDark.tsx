@@ -7,27 +7,27 @@ const SmartWatchDark = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_648_2364)">
+      <g clipPath="url(#clip0_648_2364)">
         <path
           d="M30 12H18C14.6863 12 12 14.6863 12 18V30C12 33.3137 14.6863 36 18 36H30C33.3137 36 36 33.3137 36 30V18C36 14.6863 33.3137 12 30 12Z"
           stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M18 36V42H30V36"
           stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M18 12V6H30V12"
           stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <line
           x1="20.7144"
@@ -35,8 +35,8 @@ const SmartWatchDark = () => {
           x2="20.7144"
           y2="29"
           stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
+          strokeWidth="2"
+          strokeLinecap="round"
         />
         <line
           x1="24.7144"
@@ -44,8 +44,8 @@ const SmartWatchDark = () => {
           x2="24.7144"
           y2="29"
           stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
+          strokeWidth="2"
+          strokeLinecap="round"
         />
         <line
           x1="28.7144"
@@ -53,8 +53,8 @@ const SmartWatchDark = () => {
           x2="28.7144"
           y2="29"
           stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
+          strokeWidth="2"
+          strokeLinecap="round"
         />
       </g>
       <defs>

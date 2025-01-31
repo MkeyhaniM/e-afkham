@@ -7,40 +7,40 @@ const ComputerDark = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_648_1547)">
+      <g clipPath="url(#clip0_648_1547)">
         <path
           d="M40 8H8C6.89543 8 6 8.89543 6 10V30C6 31.1046 6.89543 32 8 32H40C41.1046 32 42 31.1046 42 30V10C42 8.89543 41.1046 8 40 8Z"
           stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M14 40H34"
           stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M18 32V40"
           stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M30 32V40"
           stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M6.85718 27.4286H41.1429"
           stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
+          strokeWidth="2"
+          strokeLinecap="round"
         />
       </g>
       <defs>
