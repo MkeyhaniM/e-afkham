@@ -1,36 +1,35 @@
-import { createClient } from "@/src/utils/supabase/server";
-import { slideLinks } from "@component/src/constants";
+import {createClient} from "@/src/utils/supabase/server";
+import {slideLinks} from "@component/src/constants";
+import ItemSlide from "./ItemSlide";
 
 const Slide = async () => {
   const supabase = await createClient();
+  console.log(slideLinks[2]);
 
-  const { data, error } = await supabase.from("sliders").select();
+  const {data, error} = await supabase.from("sliders").select();
+
+  const dataWithLinks =
+    data?.map((slide, index) => ({
+      ...slide,
+      detail: slideLinks[index],
+    })) || [];
 
   if (error) {
     console.error("Error fetching sliders:", error);
     return <div>Error loading slides</div>;
   }
 
-  if (data) {
-    data.forEach((slide, index) => {
-      return {
-        ...slide,
-        link: slideLinks[index],
-      };
-    });
-  }
-
-  console.log(data);
-
   return (
-    <div>
-      {data.map((slide) => (
-        <div key={slide.id}>
-          <h2>{slide.title}</h2>
-          <p>{slide.description}</p>
-          <p>{slide.link}</p>
-          <img src={slide.image_url} alt={slide.title} />
-        </div>
+    <div className="flex items-center">
+      {dataWithLinks.map((slide) => (
+        <ItemSlide
+          key={slide.id}
+          id={slide.id}
+          title={slide.title}
+          description={slide.description}
+          detail={slide.detail}
+          image_url={slide.image_url}
+        />
       ))}
     </div>
   );
