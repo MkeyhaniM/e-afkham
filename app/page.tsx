@@ -1,6 +1,7 @@
 import Banner from "@/src/components/banner/Banner";
 import Category from "@component/src/components/category/Category";
 import IntroductionProducts from "@component/src/components/IntroductionProducts/IntroductionProducts";
+import Slide from "@component/src/components/slide/Slide";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Banner />
       <IntroductionProducts />
       <Category />
+      <Slide />
     </div>
   );
 }
