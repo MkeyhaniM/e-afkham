@@ -4,7 +4,6 @@ import ItemSlide from "./ItemSlide";
 
 const Slide = async () => {
   const supabase = await createClient();
-  console.log(slideLinks[2]);
 
   const {data, error} = await supabase.from("sliders").select();
 
