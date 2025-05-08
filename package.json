@@ -11,7 +11,8 @@
     "test:watch": "vitest watch",
     "test:coverage": "vitest run --coverage",
     "prepare": "husky",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@supabase/ssr": "^0.5.2",
@@ -38,6 +39,7 @@
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
     "@vitejs/plugin-react": "^4.3.4",
+    "cypress": "^14.3.3",
     "eslint": "^9",
     "eslint-config-next": "15.1.4",
     "husky": "^9.1.7",
