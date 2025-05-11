@@ -15,6 +15,7 @@ import CamerasDark from "./CamerasDark";
 import GamingDark from "./GamingDark";
 import SmartWatchDark from "./SmartWatchDark";
 import FavoriteList from "./FavoriteList";
+import Favourite from "./Favourite";
 
 export {
   Search,
@@ -34,4 +35,5 @@ export {
   HeadPhoneDark,
   CamerasDark,
   FavoriteList,
+  Favourite,
 };
