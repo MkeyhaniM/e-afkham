@@ -1,7 +1,9 @@
-import {createClient} from "@/src/utils/supabase/server";
+import {createClient} from "@/src/utils/supabase/client";
 import Offprice from "@component/src/types/OffPrice";
 import Image from "next/image";
 import Button from "../Button";
+import {Favourite} from "@component/src/icons";
+import AddFavourite from "./AddFavourite";
 
 interface Props {
   itemOffPrice: Offprice;
@@ -26,25 +28,21 @@ const ItemPrice = async ({itemOffPrice}: Props) => {
     return null;
   }
 
-  console.log(data);
-
-  console.log("Product data:", data);
-
   return (
-    <div className="rounded-xl bg-[#F6F6F6] p-5 flex flex-col items-center justify-evenly gap-3 w-[320px] h-[460px]">
-      <span className="self-end">add to</span>
+    <div className="rounded-xl bg-[#F6F6F6] py-5 px-6 flex flex-col items-center justify-evenly gap-2 w-[340px] overflow-hidden font-bold">
+      <AddFavourite product_id={data.product_id} />
       <Image
         src={data.image_url}
         width={200}
         height={300}
         alt="can not upload the picture"
-        className="w-[220px] h-[280px] "
+        className="w-[220px] h-[250px] object-contain"
       />
       <div>{data?.title}</div>
       <h4>${data.price}</h4>
       <Button
         name={"Buy Now"}
-        style="bg-black text-white px-9 py-3 rounded-md hover:bg-gray-800 transition duration-200 "
+        style="bg-black text-white px-9 py-2 rounded-md hover:bg-gray-800 transition duration-200 font-medium"
       />
     </div>
   );
